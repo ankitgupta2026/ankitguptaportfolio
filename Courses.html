@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AKG STUDY GROUP | Courses</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #0052cc;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover {
+      background-color: #003d99;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    h2, h3 {
+      color: #0052cc;
+    }
+    .course-info {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #0073e6;
+    }
+    .course-description {
+      margin-bottom: 2rem;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    .resources {
+      margin-top: 1rem;
+    }
+    .resources h3 {
+      margin-bottom: 1rem;
+    }
+    .resources ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .resources ul li {
+      margin-bottom: 0.8rem;
+    }
+    .resources a {
+      background: #0073e6;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+    .resources a:hover {
+      background: #005bb5;
+    }
+    footer {
+      background: #222;
+      color: #bbb;
+      text-align: center;
+      padding: 1rem 2rem;
+      margin-top: auto;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      iframe {
+        height: 220px;
+      }
+      nav ul {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AKG STUDY GROUP</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+       <li><a href="courses.html">Courses</a></li>
+      <li><a href="ebooks.html">eBooks</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="announcements.html">Announcements</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="work.html" aria-current="page">Work With Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Member Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Featured Course: 21 Days – Daily 100 Sentences</h2>
+  <p class="course-info">Start Date: June 1, 2025 | Time: 8:00 AM IST</p>
+
+  <div class="course-description">
+    <p>This free YouTube-based course is designed to boost your English speaking confidence with 100 practical sentences every day for 21 days. You get PDFs, quizzes, and a certificate after completion.</p>
+  </div>
+
+  <iframe src="https://www.youtube.com/embed/3WIlXk40PYg" title="21 Days Daily 100 Sentences Course" allowfullscreen></iframe>
+
+  <section class="resources">
+    <h3>Resources</h3>
+    <ul>
+      <li><a href="https://example.com/21days-course-pdf.pdf" target="_blank" rel="noopener">Download PDF Workbook</a></li>
+      <li><a href="https://example.com/21days-quiz" target="_blank" rel="noopener">Take Quiz Online</a></li>
+      <li><a href="https://example.com/21days-certificate" target="_blank" rel="noopener">Certificate Information</a></li>
+    </ul>
+  </section>
+
+  <hr style="margin: 3rem 0;">
+
+  <h3>Upcoming & Past Courses</h3>
+  <ul>
+    <li><strong>SpeakSmart Series</strong> – Coming July 2025 (Details coming soon)</li>
+    <li><strong>English Grammar Basics</strong> – Completed May 2025 (Free recordings available)</li>
+    <!-- Add more courses here -->
+  </ul>
+</main>
+
+<footer>
+  &copy; 2025 AKG STUDY GROUP — Empowering India with Practical English Learning
+</footer>
+
+</body>
+</html>

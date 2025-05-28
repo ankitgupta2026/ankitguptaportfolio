@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AKG STUDY GROUP | eBooks</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #0052cc;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover {
+      background-color: #003d99;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+    }
+    h2 {
+      color: #0052cc;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .ebook-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+      gap: 1.5rem;
+    }
+    .ebook-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+    }
+    .ebook-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+    .ebook-thumb {
+      width: 100%;
+      height: 280px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .ebook-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #0041a3;
+    }
+    .ebook-category {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #777;
+      margin-bottom: 0.8rem;
+    }
+    .ebook-desc {
+      flex-grow: 1;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    .btn-download {
+      background: #0073e6;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+    .btn-download:hover {
+      background: #005bb5;
+    }
+    footer {
+      background: #222;
+      color: #bbb;
+      text-align: center;
+      padding: 1rem 2rem;
+      margin-top: auto;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .ebook-thumb {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AKG STUDY GROUP</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="ebooks.html">eBooks</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="announcements.html">Announcements</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="work.html">Work With Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Member Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Our eBooks Collection</h2>
+
+  <div class="ebook-grid">
+
+    <div class="ebook-card">
+      <img class="ebook-thumb" src="https://via.placeholder.com/220x280?text=50+Fruits+Name" alt="50 Fruits Name eBook" />
+      <h3 class="ebook-title">50 Fruits Name – For Beginners</h3>
+      <p class="ebook-category">Category: Vocabulary</p>
+      <p class="ebook-desc">A beginner-friendly eBook covering 50 common fruits names with easy-to-understand explanations and examples.</p>
+      <a href="ebooks/50-fruits-name.pdf" class="btn-download" download>Download PDF</a>
+    </div>
+
+    <div class="ebook-card">
+      <img class="ebook-thumb" src="https://via.placeholder.com/220x280?text=1000+Hindi+to+English" alt="1000 Hindi to English Words eBook" />
+      <h3 class="ebook-title">1000+ Hindi to English Words – With Example Sentences</h3>
+      <p class="ebook-category">Category: Vocabulary & Practice</p>
+      <p class="ebook-desc">Expand your vocabulary with 1000+ commonly used Hindi words translated into English, complete with practical example sentences.</p>
+      <a href="ebooks/1000-hindi-english.pdf" class="btn-download" download>Download PDF</a>
+    </div>
+
+    <div class="ebook-card">
+      <img class="ebook-thumb" src="https://via.placeholder.com/220x280?text=500+English+Words" alt="500 English Words with Hindi Meaning eBook" />
+      <h3 class="ebook-title">500+ English Words with Hindi Meaning – Vocabulary Builder</h3>
+      <p class="ebook-category">Category: Vocabulary Builder</p>
+      <p class="ebook-desc">Boost your English vocabulary with 500+ essential words and their Hindi meanings to help improve your language skills.</p>
+      <a href="ebooks/500-english-words.pdf" class="btn-download" download>Download PDF</a>
+    </div>
+
+    <!-- Add more eBooks here -->
+
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 AKG STUDY GROUP — Empowering India with Practical English Learning
+</footer>
+
+</body>
+</html>

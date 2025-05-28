@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AKG STUDY GROUP | Work With Us</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fefefe;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #0052cc;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover {
+      background-color: #003d99;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+    }
+    h2 {
+      color: #0052cc;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #0052cc;
+      padding-bottom: 0.3rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    ul.position-list {
+      list-style-type: disc;
+      margin-left: 2rem;
+    }
+    ul.position-list li {
+      margin-bottom: 0.8rem;
+      font-weight: 600;
+      color: #0047b3;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+    }
+    label {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    input, textarea, select {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: #0052cc;
+      outline: none;
+    }
+    button {
+      background-color: #0052cc;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+    }
+    button:hover {
+      background-color: #003d99;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AKG STUDY GROUP</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="ebooks.html">eBooks</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="announcements.html">Announcements</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="work.html" aria-current="page">Work With Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Member Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Join the AKG STUDY GROUP Team</h2>
+    <p>We are always looking for passionate individuals to help us empower learners across India. If you love English language education and want to contribute, consider working or volunteering with us!</p>
+  </section>
+
+  <section>
+    <h2>Open Positions</h2>
+    <ul class="position-list">
+      <li>Content Writer (English Learning Materials)</li>
+      <li>Graphic Designer (Posters, eBook Covers, Social Media)</li>
+      <li>Social Media Manager</li>
+      <li>Video Editor (YouTube Course Content)</li>
+      <li>Community Manager</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Volunteer or Partner With Us</h2>
+    <p>If you want to volunteer your time or partner with AKG STUDY GROUP for content, outreach, or events, please fill out the application form below.</p>
+  </section>
+
+  <section>
+    <h2>Application Form</h2>
+    <form action="#" method="post" onsubmit="return submitApplication(event)">
+      <label for="fullname">Full Name *</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Your full name" required />
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required />
+
+      <label for="role">Interested Role *</label>
+      <select id="role" name="role" required>
+        <option value="" disabled selected>Select a role</option>
+        <option value="Content Writer">Content Writer</option>
+        <option value="Graphic Designer">Graphic Designer</option>
+        <option value="Social Media Manager">Social Media Manager</option>
+        <option value="Video Editor">Video Editor</option>
+        <option value="Community Manager">Community Manager</option>
+        <option value="Volunteer">Volunteer</option>
+        <option value="Partner">Partner</option>
+      </select>
+
+      <label for="message">Tell us why you're interested</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write a short message"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 AKG STUDY GROUP — Empowering India with Practical English Learning
+</footer>
+
+<script>
+  function submitApplication(event) {
+    event.preventDefault();
+    alert('Thank you for your application! We will review it and get back to you soon.');
+    event.target.reset();
+    return false;
+  }
+</script>
+
+</body>
+</html>
