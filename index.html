@@ -566,6 +566,16 @@
 
   <p id="form-status"></p>
 </section>
+  <script>
+  function sendMessage(event) {
+    event.preventDefault();
+    // This just simulates form submission
+    document.getElementById("form-status").textContent = "✅ Message sent successfully!";
+    setTimeout(() => {
+      document.getElementById("form-status").textContent = "";
+    }, 5000);
+  }
+  </script>
   
 </body>
 </html>
