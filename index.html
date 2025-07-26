@@ -13,42 +13,49 @@
     }
 
     body {
-      background: linear-gradient(to right, #1f1c2c, #928dab);
+      background: #1f1c2c;
       color: white;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #1f1c2c, #928dab);
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       text-align: center;
-      padding: 2rem;
     }
 
-    .container {
-      max-width: 800px;
-    }
-
-    h1 {
+    .hero h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
 
-    h2 {
+    .hero h2 {
       font-size: 1.5rem;
       color: #ccc;
       margin-bottom: 1.5rem;
     }
 
-    p {
+    .hero p {
       font-size: 1.1rem;
-      line-height: 1.6;
+      max-width: 700px;
       margin-bottom: 2rem;
     }
 
     .buttons {
       display: flex;
       gap: 1rem;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     .buttons a {
@@ -66,32 +73,120 @@
       color: #000;
     }
 
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffd700;
+    }
+
+    .about p, .about ul {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "✔️ ";
+      margin-right: 8px;
+    }
+
+    .tech-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .tech-columns div {
+      flex: 1;
+      min-width: 200px;
+    }
+
     @media (max-width: 600px) {
-      h1 {
+      .hero h1 {
         font-size: 2rem;
       }
 
-      p {
+      .hero p {
         font-size: 1rem;
+      }
+
+      .tech-columns {
+        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <!-- Homepage Section -->
+  <section class="hero">
     <h1>Ankit Gupta</h1>
     <h2>AI Engineer | ML Developer | LLM Fine-Tuning Expert</h2>
     <p>
       Passionate about building intelligent systems, deploying real-world AI solutions, and contributing to India-first AI platforms. Let's build the future of AI together.
     </p>
-
     <div class="buttons">
       <a href="resume.pdf" download>📄 Download Resume</a>
-      <a href="#projects">🚀 View Projects</a>
+      <a href="#about">🚀 View About</a>
       <a href="mailto:ankit@example.com">📩 Hire Me</a>
     </div>
-  </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <h3>About Me</h3>
+    <p>
+      I am Ankit Gupta, an AI Engineer with a strong background in machine learning, deep learning, and large language models. I’m deeply passionate about building AI solutions that solve real-world problems—especially for Bharat. I’ve contributed to startups, scaled AI pipelines, and actively engage in LLM research and deployment.
+    </p>
+
+    <h3>Career Highlights</h3>
+    <ul>
+      <li>AI Intern at XYZ AI Labs – Built ML pipelines using scikit-learn</li>
+      <li>ML Engineer at Futuregroww – Fine-tuned LLMs for Indian use-cases</li>
+      <li>Founder, AKG Study Group – Built an AI-powered education platform</li>
+    </ul>
+
+    <h3>Tech Stack Summary</h3>
+    <div class="tech-columns">
+      <div>
+        <strong>Languages</strong>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Libraries</strong>
+        <ul>
+          <li>PyTorch</li>
+          <li>TensorFlow</li>
+          <li>scikit-learn</li>
+          <li>LangChain</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Tools</strong>
+        <ul>
+          <li>Docker</li>
+          <li>MLflow</li>
+          <li>Hugging Face</li>
+          <li>Weights & Biases</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Platforms</strong>
+        <ul>
+          <li>AWS / GCP</li>
+          <li>Vertex AI</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
